@@ -6,8 +6,8 @@ from datetime import date, timedelta
 # Set page layout
 st.set_page_config(page_title="Stock Graph", page_icon="📈", layout="wide")
 
-with open("css/style.css") as css:
-    st.markdown(f'<style>{css.read()}</style>', unsafe_allow_html=True)
+# with open("css/style.css") as css:
+#     st.markdown(f'<style>{css.read()}</style>', unsafe_allow_html=True)
 
 st.markdown("""
     <style>
