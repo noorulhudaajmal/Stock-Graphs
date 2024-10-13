@@ -28,7 +28,7 @@ selected_stock = st.sidebar.selectbox("Select a stock:", stock_options)
 
 # Date range picker for selecting start and end dates
 today = date.today()
-default_start_date = today - timedelta(days=365)  # Default to 1 year ago
+default_start_date = today - timedelta(days=200)
 
 start_date = st.sidebar.date_input("Start Date", default_start_date)
 end_date = st.sidebar.date_input("End Date", today)
@@ -57,7 +57,7 @@ else:
 
         # Chart options
         priceVolumeChartOptions = {
-            "height": 700,
+            "height": 500,
             "rightPriceScale": {
                 "scaleMargins": {
                     "top": 0.2,
